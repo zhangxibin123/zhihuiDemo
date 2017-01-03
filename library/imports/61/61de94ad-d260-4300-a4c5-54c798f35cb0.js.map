@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [],
+  "mappings": "AAAA,EAAE,CAAC,KAAK,CAAC;AACL,eAAS,EAAE,CAAC,SAAS;;AAErB,cAAU,EAAE;AACR,YAAI,EAAE;AACF,uBAAU,IAAI;AACd,gBAAI,EAAG,EAAE,CAAC,IAAI;SACjB;;KAGJ;;;AAGD,UAAM,EAAE,kBAAY;AAChB,YAAI,CAAC,CAAC,GAAG,EAAE,CAAC,IAAI,CAAC,YAAY,CAAC,WAAW,CAAC,CAAC;AAC3C,YAAI,CAAC,CAAC,GAAG,IAAI,CAAC,CAAC,CAAC,cAAc,CAAC,MAAM,CAAC,CAAC,cAAc,CAAC,aAAa,CAAC,CAAC;AACrE,YAAI,CAAC,CAAC,CAAC,UAAU,CAAC,eAAe,CAAC,CAAC;KACtC;;AAED,oBAAgB,EAAG,4BACnB;;AAEI,YAAG,IAAI,CAAC,IAAI,CAAC,QAAQ,EAAE,IAAE,IAAI,EAC7B;AACI,cAAE,CAAC,QAAQ,CAAC,SAAS,CAAC,YAAY,CAAC,CAAC;AACpC,cAAE,CAAC,GAAG,CAAC,sBAAsB,GAAC,IAAI,CAAC,IAAI,CAAC,QAAQ,EAAE,CAAC,CAAC;SACvD;KAGJ;AACD,oBAAgB,EAAE,4BAClB;AACI,UAAE,CAAC,QAAQ,CAAC,SAAS,CAAC,YAAY,CAAC,CAAC;KACvC;;AAED,cAAU,EAAE,sBACZ;AACI,UAAE,CAAC,QAAQ,CAAC,SAAS,CAAC,eAAe,CAAC,CAAC;KAC1C;AACD,kBAAc,EAAE,0BAChB;AACI,UAAE,CAAC,QAAQ,CAAC,SAAS,CAAC,mBAAmB,CAAC,CAAC;KAC9C;AACD,eAAW,EAAE,uBACb;AACI,UAAE,CAAC,QAAQ,CAAC,SAAS,CAAC,gBAAgB,CAAC,CAAC;KAC3C;AACD,gBAAY,EAAE,wBACd;AACI,UAAE,CAAC,QAAQ,CAAC,SAAS,CAAC,iBAAiB,CAAC,CAAC;KAC5C;AACD,eAAW,EAAE,uBACb;AACI,UAAE,CAAC,QAAQ,CAAC,SAAS,CAAC,gBAAgB,CAAC,CAAC;KAC3C;;CAEJ,CAAC,CAAC",
+  "file": "unknown",
+  "sourcesContent": [
+    "cc.Class({\n    extends: cc.Component,\n\n    properties: {\n        Name :{\n            default : null,\n            type : cc.Node,\n        },\n\n        \n    },\n\n    // use this for initialization\n    onLoad: function () {\n        this.a = cc.Node.getComponent(\"LoggingOn\");\n        this.b = this.a.getChildByName(\"name\").getChildByName(\"EditBoxname\");\n        this.b.setCString(\"woshixiaochou\");\n    },\n\n    BackTrackButton1 : function()\n    {\n      \n        if(self.Name.toString()==null)\n        {\n            cc.director.loadScene(\"StartScene\");\n            cc.log(\"this.name.toString()\"+this.Name.toString());\n        }\n            \n        \n    },\n    BackTarckButton2 :function()\n    {\n        cc.director.loadScene(\"StartScene\");\n    },\n    \n    SoilButton :function()\n    {\n        cc.director.loadScene(\"SoilLandScene\");\n    },\n    NeedfireButton :function()\n    {\n        cc.director.loadScene(\"NeedfireLandScene\");\n    },\n    WaterButton :function()\n    {\n        cc.director.loadScene(\"WaterLandScene\");\n    },\n    TimberButton :function()\n    {\n        cc.director.loadScene(\"TimberLandScene\");\n    },\n    AurumButton :function()\n    {\n        cc.director.loadScene(\"AurumLandScene\");\n    },\n    \n});\n"
+  ]
+}

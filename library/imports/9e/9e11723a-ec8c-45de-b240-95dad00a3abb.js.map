@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [],
+  "mappings": "AAAA,EAAE,CAAC,KAAK,CAAC;AACL,eAAS,EAAE,CAAC,SAAS;;AAErB,cAAU,EAAE,EAEX;;AAGD,UAAM,EAAE,kBAAY,EAEnB;AACD,iBAAa,EAAG,yBAChB;AACI,UAAE,CAAC,QAAQ,CAAC,SAAS,CAAC,qBAAqB,CAAC,CAAC;KAChD;CACJ,CAAC,CAAC",
+  "file": "unknown",
+  "sourcesContent": [
+    "cc.Class({\n    extends: cc.Component,\n\n    properties: {\n        \n    },\n\n    \n    onLoad: function () {\n\n    },\n    LoggingButton : function()\n    {\n        cc.director.loadScene(\"PersonalInformation\");\n    }\n});\n"
+  ]
+}
